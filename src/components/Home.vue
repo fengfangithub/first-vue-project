@@ -1,45 +1,69 @@
 <template>
-  <div>
+  <div class="container">
     <div class="header">
       <i class="fa fa-angle-left return"></i>
       <span>饿了么</span>
       <i class="share  fa fa-share-square-o"></i>
     </div>
-    <my-menu></my-menu>
+    <div class="content">
+      <my-search></my-search>
+    </div>
+    <div class="footer">
+      <my-menu></my-menu>
+    </div>
   </div>
 </template>
 
 <script>
   import MyMenu from './MyMenu'
+  import MySearch from '../basis/MySearch'
   export default {
     name: "Home",
     components: {
-      MyMenu
+      MyMenu,
+      MySearch
     }
   }
 </script>
 
 <style scoped>
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
   .header{
-    position: fixed;
-    width: 100%;
-    height: 50px;
-    top: 0;
+    flex: 50px;
     display: flex;
     align-items: center;
   }
+  .content {
+    flex: calc(100% - 100px);
+    overflow: scroll;
+  }
+  .footer {
+    flex: 50px;
+  }
   .return{
     color: blue;
-    margin:0 20px;
     font-size: 1.5em;
+    width: 15%;
+    text-align: center;
+    height: 100%;
+    line-height: 50px;
   }
   .header span{
     color: #121212;
     font-size: 0.9em;
+    width: 70%;
+    height: 100%;
+    line-height: 50px;
   }
   .share {
     color: #717171;
     font-size: 1.1em;
-    margin-left: 260px;
+    width: 15%;
+    height: 100%;
+    line-height: 50px;
   }
 </style>

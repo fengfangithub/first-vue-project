@@ -1,13 +1,15 @@
 <template>
-  <div id="app">
+  <div id="app" v-bind:style="{height: height + 'px'}">
     <router-view/>
   </div>
 </template>
-
 <script>
   export default {
     name: 'App',
-    components: {
+    data(){
+      return {
+        height: window.innerHeight
+      }
     }
   }
 </script>

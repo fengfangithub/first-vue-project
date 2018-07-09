@@ -26,9 +26,7 @@
     text-decoration: none;
    }
   #menu {
-    position: fixed;
     width: 100%;
-    bottom: 0;
     height: 50px;
     font-size: 0.75em;
     color: #999999;
