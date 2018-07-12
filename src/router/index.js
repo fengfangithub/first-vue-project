@@ -26,7 +26,7 @@ export default new Router({
     },
     {
       path: '/Person',
-      name: 'Perosn',
+      name: 'Person',
       component: Person
     }
   ]

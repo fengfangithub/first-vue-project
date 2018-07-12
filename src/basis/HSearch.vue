@@ -7,7 +7,7 @@
 
 <script>
   export default {
-    name: "MySearch"
+    name: "HSearch"
   }
 </script>
 

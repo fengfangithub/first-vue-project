@@ -6,7 +6,10 @@
       <i class="share  fa fa-share-square-o"></i>
     </div>
     <div class="content">
-      <my-search></my-search>
+      <h-search></h-search>
+      <h-menu></h-menu>
+      <h-members></h-members>
+      <h-recommended></h-recommended>
     </div>
     <div class="footer">
       <my-menu></my-menu>
@@ -16,12 +19,18 @@
 
 <script>
   import MyMenu from './MyMenu'
-  import MySearch from '../basis/MySearch'
+  import HSearch from '../basis/HSearch'
+  import HMenu from '../basis/HMenu'
+  import HMembers from '../basis/HMembers'
+  import HRecommended from '../basis/HRecommended'
   export default {
     name: "Home",
     components: {
       MyMenu,
-      MySearch
+      HSearch,
+      HMenu,
+      HMembers,
+      HRecommended
     }
   }
 </script>
