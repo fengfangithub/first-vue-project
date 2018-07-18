@@ -10,6 +10,8 @@
       <h-menu></h-menu>
       <h-members></h-members>
       <h-recommended></h-recommended>
+      <h-advertising></h-advertising>
+      <h-merchants></h-merchants>
     </div>
     <div class="footer">
       <my-menu></my-menu>
@@ -23,6 +25,8 @@
   import HMenu from '../basis/HMenu'
   import HMembers from '../basis/HMembers'
   import HRecommended from '../basis/HRecommended'
+  import HAdvertising from '../basis/HAdvertising'
+  import HMerchants from '../basis/HMerchants'
   export default {
     name: "Home",
     components: {
@@ -30,7 +34,9 @@
       HSearch,
       HMenu,
       HMembers,
-      HRecommended
+      HRecommended,
+      HAdvertising,
+      HMerchants
     }
   }
 </script>

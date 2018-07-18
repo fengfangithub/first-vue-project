@@ -3,7 +3,7 @@
     <router-link to="/Person" tag="div" v-for="d in dishes" class="dishes">
       <span class="name">{{d.name}}</span>
       <span class="tag">{{d.tag}}</span>
-      <img src="../assets/dishe1.png" class="img">
+      <img :src="d.img" class="img">
     </router-link>
   </div>
 </template>
@@ -21,7 +21,7 @@
           },
           {
             name: '品质套餐',
-            tag: '品质升级消费亲民',
+            tag: '品质升级亲民',
             img: '/static/img/dishe1.5046c48.png'
           },
           {
@@ -40,7 +40,7 @@
   .container {
     width: 94%;
     height: 120px;
-    margin: 5px 3% 15px;
+    margin: 5px 3% 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
