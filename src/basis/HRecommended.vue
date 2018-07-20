@@ -3,7 +3,7 @@
     <router-link to="/Person" tag="div" v-for="d in dishes" class="dishes">
       <span class="name">{{d.name}}</span>
       <span class="tag">{{d.tag}}</span>
-      <img :src="d.img" class="img">
+      <img src="../assets/dishe1.png" class="img">
     </router-link>
   </div>
 </template>
